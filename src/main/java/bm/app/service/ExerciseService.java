@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static bm.app.config.Constants.*;
 
@@ -42,4 +45,38 @@ public class ExerciseService {
         }
         return true;
     }
+
+    public List<ExerciseModel> selectAllRecords(){
+        List<ExerciseModel> list = new ArrayList();
+        String sql = "select * from tracker";
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try{
+            preparedStatement = getConnection().prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+        }catch (SQLException e){
+            logger.error("Can't extract records.");
+            e.printStackTrace();
+        }
+
+        try {
+            while (resultSet.next()){
+                ExerciseModel exerciseModel = new ExerciseModel();
+                exerciseModel.setId(resultSet.getInt("id"));
+                exerciseModel.setDay(resultSet.getInt("day"));
+                exerciseModel.setExercisetype(resultSet.getString("exercisetype"));
+                exerciseModel.setSeries(resultSet.getInt("series"));
+                exerciseModel.setRepetitions(resultSet.getInt("repetitions"));
+                list.add(exerciseModel);
+            }
+
+        }catch (SQLException e){
+            logger.error("Can't construct a list of records.");
+            e.printStackTrace();
+        }
+        return list;
+
+
+    }
+
 }
