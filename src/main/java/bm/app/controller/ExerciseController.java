@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Date;
+import java.util.List;
 
 @Controller
 public class ExerciseController {
@@ -43,5 +44,12 @@ public class ExerciseController {
         model.addAttribute("repetitions", repetitions);
 
         return "result";
+    }
+
+    @PostMapping("allrecords")
+    public String displayAllRecords(Model model){
+        List<ExerciseModel> listOfRecords = exerciseService.selectAllRecords();
+        model.addAttribute("listOfRecords", listOfRecords);
+        return "allrecords";
     }
 }
