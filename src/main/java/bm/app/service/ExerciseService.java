@@ -33,7 +33,7 @@ public class ExerciseService {
     public boolean insertRecord(ExerciseModel exerciseModel){
         String sql ="insert into tracker (day, exercisetype, series, repetitions) values (?, ?, ?, ?)";
         try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)){
-                preparedStatement.setInt(1, exerciseModel.getDay());
+                preparedStatement.setDate(1, exerciseModel.getDay());
                 preparedStatement.setString(2, exerciseModel.getExercisetype());
                 preparedStatement.setInt(3, exerciseModel.getSeries());
                 preparedStatement.setInt(4, exerciseModel.getRepetitions());
@@ -63,7 +63,7 @@ public class ExerciseService {
             while (resultSet.next()){
                 ExerciseModel exerciseModel = new ExerciseModel();
                 exerciseModel.setId(resultSet.getInt("id"));
-                exerciseModel.setDay(resultSet.getInt("day"));
+                exerciseModel.setDay(resultSet.getDate("day"));
                 exerciseModel.setExercisetype(resultSet.getString("exercisetype"));
                 exerciseModel.setSeries(resultSet.getInt("series"));
                 exerciseModel.setRepetitions(resultSet.getInt("repetitions"));

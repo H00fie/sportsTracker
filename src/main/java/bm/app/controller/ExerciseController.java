@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.Date;
+
 @Controller
 public class ExerciseController {
 
@@ -24,7 +26,7 @@ public class ExerciseController {
     }
 
     @PostMapping("home")
-    public String addResult(@RequestParam int day,
+    public String addResult(@RequestParam Date day,
                             @RequestParam String exercisetype,
                             @RequestParam int series,
                             @RequestParam int repetitions,

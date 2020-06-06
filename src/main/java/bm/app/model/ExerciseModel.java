@@ -2,6 +2,8 @@ package bm.app.model;
 
 import lombok.*;
 
+import java.sql.Date;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -10,7 +12,7 @@ import lombok.*;
 public class ExerciseModel {
 
     private int id;
-    private int day;
+    private Date day;
     private String exercisetype;
     private int series;
     private int repetitions;
