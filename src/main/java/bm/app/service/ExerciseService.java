@@ -2,6 +2,10 @@ package bm.app.service;
 
 import bm.app.config.Connector;
 import bm.app.model.ExerciseModel;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -78,5 +82,20 @@ public class ExerciseService {
 
 
     }
+
+    /*
+    Hibernate methods below.
+     */
+
+    public List<ExerciseModel> selectAllRecordsWithHibernate(){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<ExerciseModel> list = session.createQuery("from ExerciseModel", ExerciseModel.class).list();
+        transaction.commit();
+        return list;
+    }
+
+
 
 }
