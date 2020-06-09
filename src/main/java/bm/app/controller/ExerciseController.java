@@ -52,4 +52,11 @@ public class ExerciseController {
         model.addAttribute("listOfRecords", listOfRecords);
         return "allrecords";
     }
+
+    @PostMapping("allpushups")
+    public String displayAllPushups(Model model){
+        List<ExerciseModel> listOfPushups = exerciseService.selectAllPushUps();
+        model.addAttribute("listOfPushups", listOfPushups);
+        return "allpushups";
+    }
 }
