@@ -113,7 +113,7 @@ public class ExerciseService {
             e.printStackTrace();
         }
         List<ExerciseModel> resultList = list.stream()
-                .filter(exercise -> exercise.getExercisetype().contains("pushup"))
+                .filter(exercise -> exercise.getExercisetype().contains("push"))
                 .collect(Collectors.toList());
 
         return resultList;
