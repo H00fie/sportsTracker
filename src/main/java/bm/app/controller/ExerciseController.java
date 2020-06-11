@@ -31,6 +31,11 @@ public class ExerciseController {
         return "menu";
     }
 
+    @PostMapping("menu")
+    public String backToMenu(){
+        return "menu";
+    }
+
     @PostMapping("goHardOrGoHome")
     public String goToHome() {
         return "home";
@@ -158,7 +163,8 @@ public class ExerciseController {
     }
 
     @PostMapping("finalResult")
-    public String finalResultPage(@RequestParam int repetitions){
+    public String finalResultPage(@RequestParam int repetitions,
+                                  Model model){
         LocalDate localDate = LocalDate.now();
         Date date = Date.valueOf(localDate);
         ExerciseModel exerciseModel = new ExerciseModel();
@@ -167,6 +173,12 @@ public class ExerciseController {
         exerciseModel.setSeries(this.seriesAmount);
         exerciseModel.setRepetitions(repetitions);
         exerciseService.insertRecord(exerciseModel);
+        model.addAttribute("date", date);
+        model.addAttribute("exercise", this.exerciseName);
+        model.addAttribute("series", this.seriesAmount);
+        model.addAttribute("repetitions", repetitions);
+        this.exerciseName = "";
+        this.seriesAmount = 0;
         return "finalResult";
     }
 

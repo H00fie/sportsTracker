@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<
+<div id="header">A new record was added:</div>
+<div th:text="'Date: ' + ${date}"/>
+<div th:text="'Exercise: ' + ${exercise}"/>
+<div th:text="'Series: ' + ${series}"/>
+<div th:text="'Repetitions: ' + ${repetitions}"/>
+
+
+<form action="menu" method="post">
+    <input type="submit" value="Back to menu">
+</form>
 
 </body>
 </html>
