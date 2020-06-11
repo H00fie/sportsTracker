@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Controller
@@ -19,7 +22,7 @@ public class ExerciseController {
         this.exerciseService = exerciseService;
     }
 
-
+    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-mm-dd");
     private String exerciseName = "";
     private Integer seriesAmount = 0;
 
@@ -152,6 +155,19 @@ public class ExerciseController {
         List<ExerciseModel> listOfPushups = exerciseService.selectAllPushUps();
         model.addAttribute("listOfPushups", listOfPushups);
         return "allpushups";
+    }
+
+    @PostMapping("finalResult")
+    public String finalResultPage(@RequestParam int repetitions){
+        LocalDate localDate = LocalDate.now();
+        Date date = Date.valueOf(localDate);
+        ExerciseModel exerciseModel = new ExerciseModel();
+        exerciseModel.setDay(date);
+        exerciseModel.setExercisetype(this.exerciseName);
+        exerciseModel.setSeries(this.seriesAmount);
+        exerciseModel.setRepetitions(repetitions);
+        exerciseService.insertRecord(exerciseModel);
+        return "finalResult";
     }
 
 
