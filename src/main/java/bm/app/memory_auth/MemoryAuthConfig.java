@@ -35,11 +35,11 @@ public class MemoryAuthConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .authorizeRequests()
-                .antMatchers("/home").hasRole("ADMIN")
+                .antMatchers("/menu").hasRole("ADMIN")
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()
-                .defaultSuccessUrl("/home");
+                .defaultSuccessUrl("/menu");
 
         http
                 .csrf().disable()

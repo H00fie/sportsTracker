@@ -20,6 +20,15 @@ public class ExerciseController {
         this.exerciseService = exerciseService;
     }
 
+    @GetMapping("menu")
+    public String getMenu(){
+        return "menu";
+    }
+
+    @PostMapping("goHardOrGoHome")
+    public String goToHome(){
+        return "home";
+    }
 
     @GetMapping("home")
     public String getHome(){
@@ -53,7 +62,7 @@ public class ExerciseController {
         return "allrecords";
     }
 
-    @PostMapping("allpushups")
+    @PostMapping("morePushUpsPlease")
     public String displayAllPushups(Model model){
         List<ExerciseModel> listOfPushups = exerciseService.selectAllPushUps();
         model.addAttribute("listOfPushups", listOfPushups);
