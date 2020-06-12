@@ -8,10 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.swing.*;
+import javax.swing.text.html.Option;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.IntStream;
 
 @Controller
 public class ExerciseController {
@@ -24,7 +31,7 @@ public class ExerciseController {
 
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-mm-dd");
     private String exerciseName = "";
-    private Integer seriesAmount = 0;
+    private int seriesAmount;
 
     @GetMapping("menu")
     public String getMenu() {
@@ -143,7 +150,7 @@ public class ExerciseController {
     }
 
     @PostMapping("repetitions")
-    public String numberOfSeries(@RequestParam Integer seriesAmount){
+    public String numberOfSeries(@RequestParam int seriesAmount){
         this.seriesAmount = seriesAmount;
         return "repetitions";
     }
@@ -164,7 +171,12 @@ public class ExerciseController {
 
     @PostMapping("finalResult")
     public String finalResultPage(@RequestParam int repetitions,
-                                  Model model){
+                                                                  Model model){
+        if (IntStream
+                .range(2, repetitions)
+                .noneMatch(index -> repetitions % index == 0)){
+            return "repetitions";
+        }
         LocalDate localDate = LocalDate.now();
         Date date = Date.valueOf(localDate);
         ExerciseModel exerciseModel = new ExerciseModel();
@@ -177,8 +189,6 @@ public class ExerciseController {
         model.addAttribute("exercise", this.exerciseName);
         model.addAttribute("series", this.seriesAmount);
         model.addAttribute("repetitions", repetitions);
-        this.exerciseName = "";
-        this.seriesAmount = 0;
         return "finalResult";
     }
 
