@@ -170,25 +170,33 @@ public class ExerciseController {
     }
 
     @PostMapping("finalResult")
-    public String finalResultPage(@RequestParam int repetitions,
+    public String finalResultPage(@RequestParam Optional<Integer> repetitions,
                                                                   Model model){
-        if (IntStream
-                .range(2, repetitions)
-                .noneMatch(index -> repetitions % index == 0)){
+        int extractedRepetitions = 0;
+        if (repetitions.isPresent()){
+            extractedRepetitions = repetitions.get();
+        }else {
             return "repetitions";
         }
+        int finalExtractedRepetitions = extractedRepetitions;
+        if (IntStream
+                .range(2, extractedRepetitions)
+                .noneMatch(index -> finalExtractedRepetitions % index == 0)){
+            return "repetitions";
+        }
+
         LocalDate localDate = LocalDate.now();
         Date date = Date.valueOf(localDate);
         ExerciseModel exerciseModel = new ExerciseModel();
         exerciseModel.setDay(date);
         exerciseModel.setExercisetype(this.exerciseName);
         exerciseModel.setSeries(this.seriesAmount);
-        exerciseModel.setRepetitions(repetitions);
+        exerciseModel.setRepetitions(finalExtractedRepetitions);
         exerciseService.insertRecord(exerciseModel);
         model.addAttribute("date", date);
         model.addAttribute("exercise", this.exerciseName);
         model.addAttribute("series", this.seriesAmount);
-        model.addAttribute("repetitions", repetitions);
+        model.addAttribute("repetitions", finalExtractedRepetitions);
         return "finalResult";
     }
 
