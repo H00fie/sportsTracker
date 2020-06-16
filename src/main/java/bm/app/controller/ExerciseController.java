@@ -2,6 +2,8 @@ package bm.app.controller;
 
 import bm.app.model.ExerciseModel;
 import bm.app.service.ExerciseService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,8 @@ import java.util.stream.IntStream;
 
 @Controller
 public class ExerciseController {
+
+    private static final Logger logger = LoggerFactory.getLogger(ExerciseController.class);
 
     private ExerciseService exerciseService;
 
@@ -151,7 +155,11 @@ public class ExerciseController {
 
     @PostMapping("repetitions")
     public String numberOfSeries(@RequestParam int seriesAmount){
-        this.seriesAmount = seriesAmount;
+        Optional<Integer> optional = Optional.ofNullable(seriesAmount);
+        this.seriesAmount = optional.get();
+        if (seriesAmount == 0){
+            return "series";
+        }
         return "repetitions";
     }
 
