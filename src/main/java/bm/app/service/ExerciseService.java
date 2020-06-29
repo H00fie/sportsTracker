@@ -35,20 +35,21 @@ public class ExerciseService {
         return connection;
     }
 
-    public boolean insertRecord(ExerciseModel exerciseModel) {
-        String sql = "insert into tracker (day, exercisetype, series, repetitions) values (?, ?, ?, ?)";
-        try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)) {
-            preparedStatement.setDate(1, exerciseModel.getDay());
-            preparedStatement.setString(2, exerciseModel.getExercisetype());
-            preparedStatement.setInt(3, exerciseModel.getSeries());
-            preparedStatement.setInt(4, exerciseModel.getRepetitions());
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            logger.error("Cannot insert a record.");
-            e.printStackTrace();
-            return false;
-        }
-        return true;
+    public void insertRecord(ExerciseModel exerciseModel) {
+        Thread th = new Thread(() -> {
+            String sql = "insert into tracker (day, exercisetype, series, repetitions) values (?, ?, ?, ?)";
+            try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)) {
+                preparedStatement.setDate(1, exerciseModel.getDay());
+                preparedStatement.setString(2, exerciseModel.getExercisetype());
+                preparedStatement.setInt(3, exerciseModel.getSeries());
+                preparedStatement.setInt(4, exerciseModel.getRepetitions());
+                preparedStatement.executeUpdate();
+            } catch (SQLException e) {
+                logger.error("Cannot insert a record.");
+                e.printStackTrace();
+            }
+        });
+        th.start();
     }
 
     public List<ExerciseModel> selectAllRecords() {
