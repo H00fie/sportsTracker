@@ -91,40 +91,10 @@ public class ExerciseService {
     }
 
     public List<ExerciseModel> selectAllPushUps() {
-        List<ExerciseModel> list = new ArrayList();
-        String sql = "select * from tracker";
-        PreparedStatement preparedStatement = null;
-        ResultSet resultSet = null;
-        try {
-            preparedStatement = getConnection().prepareStatement(sql);
-            resultSet = preparedStatement.executeQuery();
-        } catch (SQLException e) {
-            logger.error("Can't extract records.");
-            e.printStackTrace();
-        }
-
-        try {
-            while (resultSet.next()) {
-                ExerciseModel exerciseModel = new ExerciseModel();
-                exerciseModel.setId(resultSet.getInt("id"));
-                exerciseModel.setDay(resultSet.getDate("day"));
-                exerciseModel.setExercisetype(resultSet.getString("exercisetype"));
-                exerciseModel.setSeries(resultSet.getInt("series"));
-                exerciseModel.setRepetitions(resultSet.getInt("repetitions"));
-                list.add(exerciseModel);
-            }
-
-        } catch (SQLException e) {
-            logger.error("Can't construct a list of records.");
-            e.printStackTrace();
-        }
-        List<ExerciseModel> resultList = list.stream()
+        List<ExerciseModel> list = selectAllRecords().stream()
                 .filter(exercise -> exercise.getExercisetype().contains("push"))
                 .collect(Collectors.toList());
-
-        return resultList;
-
-
+        return list;
     }
 
     /*
@@ -139,9 +109,6 @@ public class ExerciseService {
         transaction.commit();
         return list;
     }
-
-
-
 
 
 }

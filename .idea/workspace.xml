@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +150,7 @@
       <workItem from="1593541999511" duration="1141000" />
       <workItem from="1593704536777" duration="590000" />
       <workItem from="1593811594973" duration="589000" />
-      <workItem from="1593855785043" duration="3828000" />
+      <workItem from="1593855785043" duration="4642000" />
     </task>
     <servers />
   </component>
