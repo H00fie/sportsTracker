@@ -1,6 +1,7 @@
 package bm.app.model;
 
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 import java.util.Optional;
@@ -10,6 +11,7 @@ import java.util.Optional;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Component
 public class ExerciseModel {
 
     private int id;

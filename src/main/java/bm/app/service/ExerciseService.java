@@ -8,20 +8,25 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import static bm.app.config.Constants.*;
 
 @Service
 public class ExerciseService {
+
+    BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
 
     private static final Logger logger = LoggerFactory.getLogger(ExerciseService.class);
 
@@ -67,7 +72,7 @@ public class ExerciseService {
 
         try {
             while (resultSet.next()) {
-                ExerciseModel exerciseModel = new ExerciseModel();
+                ExerciseModel exerciseModel = (ExerciseModel) beanFactory.getBean("model");
                 exerciseModel.setId(resultSet.getInt("id"));
                 exerciseModel.setDay(resultSet.getDate("day"));
                 exerciseModel.setExercisetype(resultSet.getString("exercisetype"));
