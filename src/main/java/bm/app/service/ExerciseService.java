@@ -26,7 +26,7 @@ import static bm.app.config.Constants.*;
 @Service
 public class ExerciseService {
 
-    BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+    BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("src/spring.xml"));
 
     private static final Logger logger = LoggerFactory.getLogger(ExerciseService.class);
 
