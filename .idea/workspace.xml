@@ -3,11 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allpushups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allpushups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allrecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allrecords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/finalResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/finalResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/repetitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/repetitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/series.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/series.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/allpushups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/allpushups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/allrecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/allrecords.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/finalResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/finalResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/repetitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/repetitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/series.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/series.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +43,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sports@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -73,14 +96,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ticketbookingapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../storage" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src" />
-      <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src\main\java" />
       <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src\main\resources" />
+      <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src\main\java\bm\app" />
+      <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src\main\java" />
+      <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src" />
       <recent name="C:\Users\User\Desktop\Ascension\Programiątko\ProjektSpring\sports-tracker\src\main\resources\templates" />
     </key>
   </component>
@@ -157,7 +181,14 @@
       <workItem from="1593541999511" duration="1141000" />
       <workItem from="1593704536777" duration="590000" />
       <workItem from="1593811594973" duration="589000" />
-      <workItem from="1593855785043" duration="6477000" />
+      <workItem from="1593855785043" duration="8997000" />
+      <workItem from="1594237821949" duration="1267000" />
+      <workItem from="1594498867650" duration="3249000" />
+      <workItem from="1594818406211" duration="3554000" />
+      <workItem from="1594923125686" duration="5240000" />
+      <workItem from="1594966635822" duration="5069000" />
+      <workItem from="1595080555049" duration="1407000" />
+      <workItem from="1595261846459" duration="3688000" />
     </task>
     <servers />
   </component>
@@ -169,50 +200,50 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="77" key="#Assign_Data_Sources/0.0.1536.834@0.0.1536.834" timestamp="1591544419166" />
-    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592244593359">
+    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594962564078">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1592244593359" />
+    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594962564078" />
     <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1591480793149">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1591480793149" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1591886127678">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1595007122818">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1591886127678" />
-    <state width="1493" height="428" key="GridCell.Tab.0.bottom" timestamp="1593868678170">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1595007122818" />
+    <state width="1493" height="333" key="GridCell.Tab.0.bottom" timestamp="1595281280994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.0.center" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
+    <state width="1493" height="333" key="GridCell.Tab.0.center" timestamp="1595281280994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.0.left" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
+    <state width="1493" height="333" key="GridCell.Tab.0.left" timestamp="1595281280994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.0.right" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
+    <state width="1493" height="333" key="GridCell.Tab.0.right" timestamp="1595281280994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.1.bottom" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
+    <state width="1493" height="333" key="GridCell.Tab.1.bottom" timestamp="1595281280995">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.1.center" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
+    <state width="1493" height="333" key="GridCell.Tab.1.center" timestamp="1595281280995">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.1.left" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
+    <state width="1493" height="333" key="GridCell.Tab.1.left" timestamp="1595281280994">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
-    <state width="1493" height="428" key="GridCell.Tab.1.right" timestamp="1593868678170">
+    <state width="1493" height="333" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
+    <state width="1493" height="333" key="GridCell.Tab.1.right" timestamp="1595281280995">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="428" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1593868678170" />
+    <state width="1493" height="333" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1591544565593">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -229,10 +260,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="184" key="extract.method.dialog/0.0.1536.834@0.0.1536.834" timestamp="1593858066722" />
-    <state x="209" y="114" key="new project wizard" timestamp="1591996515157">
+    <state x="209" y="114" key="new project wizard" timestamp="1595280466986">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="209" y="114" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1591996515157" />
+    <state x="209" y="114" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1595280466986" />
     <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1592248818798">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
