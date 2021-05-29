@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sportsTracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sports-tracker.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/config/Connector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/config/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/controller/ExerciseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/Exercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/exercisetype-model.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bm/app/SpringSecurityBasicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bm/app/SpringSecurityBasicApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/config/Connector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/config/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/ExerciseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/ExerciseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/RestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/RestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/HomeRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/HomeRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/MemoryAuthConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/MemoryAuthConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exercisetype-model.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bm/app/SpringSecurityBasicApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bm/app/SpringSecurityBasicApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/repository/ExerciseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/repository/ExerciseRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +199,7 @@
       <workItem from="1620639242151" duration="2216000" />
       <workItem from="1621016880406" duration="4000" />
       <workItem from="1622236780243" duration="417000" />
-      <workItem from="1622304876401" duration="5644000" />
+      <workItem from="1622304876401" duration="6922000" />
     </task>
     <servers />
   </component>

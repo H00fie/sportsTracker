@@ -12,6 +12,6 @@ public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
     List<Exercise> findAll();
 
-    @Query("from Exercise where exerciseType = :pushup")
+    @Query("from Exercise where exerciseType like concat('%', 'push', '%')")
     List<Exercise> findAllPushups();
 }
