@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sportsTracker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports-tracker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/config/Connector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/config/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/controller/ExerciseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/ExerciseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/Exercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allpushups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allpushups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/allrecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/allrecords.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/finalResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/finalResult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/repetitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/repetitions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/series.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/series.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/exercisetype-model.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bm/app/SpringSecurityBasicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bm/app/SpringSecurityBasicApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/TrackerApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/config/Connector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/config/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/ExerciseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/ExerciseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/RestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/RestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/HomeRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/HomeRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/MemoryAuthConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/memory_auth/MemoryAuthConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/ExerciseModel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/ExerciseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/allpushups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/allpushups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/allrecords.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/allrecords.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/finalResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/finalResult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/repetitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/repetitions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/series.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/series.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exercisetype-model.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bm/app/SpringSecurityBasicApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bm/app/SpringSecurityBasicApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +64,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,18 +80,10 @@
       </set>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1cwBronxIO2FWsKjgXHnPQFv7HB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -92,12 +94,16 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../storage" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../The-chefs-cookbook" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -109,6 +115,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TrackerApp">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringSecurityBasicApplicationTests.getAdminPassowrd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sports-tracker" />
       <extension name="coverage">
@@ -144,7 +161,7 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SpringSecurityBasicApplicationTests.getAdminPassowrd" />
-      <item itemvalue="Remote.Remote" />
+      <item itemvalue="Remote JVM Debug.Remote" />
       <item itemvalue="Spring Boot.TrackerApp" />
     </list>
     <recent_temporary>
@@ -153,6 +170,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,84 +207,44 @@
       <workItem from="1594966635822" duration="5069000" />
       <workItem from="1595080555049" duration="1407000" />
       <workItem from="1595261846459" duration="3688000" />
+      <workItem from="1617307100744" duration="2371000" />
+      <workItem from="1617316055849" duration="5013000" />
+      <workItem from="1617371339988" duration="619000" />
+      <workItem from="1617377460728" duration="2705000" />
+      <workItem from="1617387730630" duration="592000" />
+      <workItem from="1617436376347" duration="938000" />
+      <workItem from="1617440019571" duration="718000" />
+      <workItem from="1617626730902" duration="3667000" />
+      <workItem from="1617642407417" duration="1208000" />
+      <workItem from="1617691966507" duration="599000" />
+      <workItem from="1617780730539" duration="598000" />
+      <workItem from="1617801138633" duration="1158000" />
+      <workItem from="1618163883622" duration="382000" />
+      <workItem from="1618232960545" duration="1649000" />
+      <workItem from="1618246328690" duration="81000" />
+      <workItem from="1618247749175" duration="582000" />
+      <workItem from="1618602899721" duration="278000" />
+      <workItem from="1618658759296" duration="24000" />
+      <workItem from="1620639242151" duration="2216000" />
+      <workItem from="1621016880406" duration="4000" />
+      <workItem from="1622236780243" duration="417000" />
+      <workItem from="1622304876401" duration="5644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="361" y="77" key="#Assign_Data_Sources" timestamp="1591544419166">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="77" key="#Assign_Data_Sources/0.0.1536.834@0.0.1536.834" timestamp="1591544419166" />
-    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594962564078">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="361" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1594962564078" />
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1591480793149">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1591480793149" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1595007122818">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1595007122818" />
-    <state width="1493" height="333" key="GridCell.Tab.0.bottom" timestamp="1595281280994">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
-    <state width="1493" height="333" key="GridCell.Tab.0.center" timestamp="1595281280994">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
-    <state width="1493" height="333" key="GridCell.Tab.0.left" timestamp="1595281280994">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
-    <state width="1493" height="333" key="GridCell.Tab.0.right" timestamp="1595281280994">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
-    <state width="1493" height="333" key="GridCell.Tab.1.bottom" timestamp="1595281280995">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
-    <state width="1493" height="333" key="GridCell.Tab.1.center" timestamp="1595281280995">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
-    <state width="1493" height="333" key="GridCell.Tab.1.left" timestamp="1595281280994">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1595281280994" />
-    <state width="1493" height="333" key="GridCell.Tab.1.right" timestamp="1595281280995">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1493" height="333" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1595281280995" />
-    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1591544565593">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1591544565593" />
-    <state x="277" y="61" key="SettingsEditor" timestamp="1591446494768">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="277" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1591446494768" />
-    <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1593253180195">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1593253180195" />
-    <state x="499" y="184" key="extract.method.dialog" timestamp="1593858066722">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="499" y="184" key="extract.method.dialog/0.0.1536.834@0.0.1536.834" timestamp="1593858066722" />
-    <state x="209" y="114" key="new project wizard" timestamp="1595280466986">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="209" y="114" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1595280466986" />
-    <state x="425" y="189" width="672" height="677" key="run.anything.popup" timestamp="1592248818798">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="425" y="189" width="672" height="677" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1592248818798" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

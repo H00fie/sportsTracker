@@ -1,6 +1,7 @@
 package bm.app.controller;
 
-import bm.app.model.ExerciseModel;
+import bm.app.model.Exercise;
+import bm.app.repository.ExerciseRepository;
 import bm.app.service.ExerciseService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,11 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.swing.*;
-import javax.swing.text.html.Option;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -27,10 +23,10 @@ public class ExerciseController {
 
     private static final Logger logger = LoggerFactory.getLogger(ExerciseController.class);
 
-    private ExerciseService exerciseService;
+    private ExerciseRepository exerciseRepository;
 
-    public ExerciseController(ExerciseService exerciseService) {
-        this.exerciseService = exerciseService;
+    public ExerciseController(ExerciseRepository exerciseRepository) {
+        this.exerciseRepository = exerciseRepository;
     }
 
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-mm-dd");
@@ -165,14 +161,14 @@ public class ExerciseController {
 
     @PostMapping("allrecords")
     public String displayAllRecords(Model model) {
-        List<ExerciseModel> listOfRecords = exerciseService.selectAllRecords();
+        List<Exercise> listOfRecords = exerciseRepository.findAll();
         model.addAttribute("listOfRecords", listOfRecords);
         return "allrecords";
     }
 
     @PostMapping("morePushUpsPlease")
     public String displayAllPushups(Model model) {
-        List<ExerciseModel> listOfPushups = exerciseService.selectAllPushUps();
+        List<Exercise> listOfPushups = exerciseRepository.findAllPushups();
         model.addAttribute("listOfPushups", listOfPushups);
         return "allpushups";
     }
@@ -195,12 +191,12 @@ public class ExerciseController {
 
         LocalDate localDate = LocalDate.now();
         Date date = Date.valueOf(localDate);
-        ExerciseModel exerciseModel = new ExerciseModel();
-        exerciseModel.setDay(date);
-        exerciseModel.setExercisetype(this.exerciseName);
-        exerciseModel.setSeries(this.seriesAmount);
-        exerciseModel.setRepetitions(finalExtractedRepetitions);
-        exerciseService.insertRecord(exerciseModel);
+        Exercise exercise = new Exercise();
+        exercise.setDay(date);
+        exercise.setExerciseType(this.exerciseName);
+        exercise.setSeries(this.seriesAmount);
+        exercise.setRepetitions(finalExtractedRepetitions);
+        exerciseRepository.save(exercise);
         model.addAttribute("date", date);
         model.addAttribute("exercise", this.exerciseName);
         model.addAttribute("series", this.seriesAmount);
