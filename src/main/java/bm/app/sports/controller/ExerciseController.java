@@ -1,14 +1,14 @@
-package bm.app.controller;
+package bm.app.sports.controller;
 
-import bm.app.model.Exercise;
-import bm.app.repository.ExerciseRepository;
-import bm.app.service.ExerciseService;
+import bm.app.sports.model.Exercise;
+import bm.app.sports.repository.ExerciseRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Date;

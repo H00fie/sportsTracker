@@ -1,6 +1,6 @@
-package bm.app.repository;
+package bm.app.sports.repository;
 
-import bm.app.model.Exercise;
+import bm.app.sports.model.Exercise;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

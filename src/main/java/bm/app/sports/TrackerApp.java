@@ -1,4 +1,4 @@
-package bm.app;
+package bm.app.sports;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

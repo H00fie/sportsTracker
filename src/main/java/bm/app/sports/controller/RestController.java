@@ -1,8 +1,7 @@
-package bm.app.controller;
+package bm.app.sports.controller;
 
-import bm.app.service.ExerciseService;
+import bm.app.sports.service.ExerciseService;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/api/v1")

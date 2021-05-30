@@ -1,4 +1,4 @@
-package bm.app.service;
+package bm.app.sports.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
