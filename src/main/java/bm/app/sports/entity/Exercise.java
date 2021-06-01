@@ -1,4 +1,4 @@
-package bm.app.sports.model;
+package bm.app.sports.entity;
 
 import lombok.*;
 
@@ -6,13 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.sql.Date;
+import java.util.Date;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Builder
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Exercise {
 
     @Id

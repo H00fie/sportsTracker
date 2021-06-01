@@ -6,15 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/TrackerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/TrackerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/ExerciseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/RestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/memory_auth/HomeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/memory_auth/HomeRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/memory_auth/MemoryAuthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/memory_auth/MemoryAuthConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/model/Exercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/repository/ExerciseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/repository/ExerciseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/ExerciseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/ExerciseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/ExerciseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/RestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/entity/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/repository/ExerciseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/repository/ExerciseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/ExerciseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/ExerciseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/ExerciseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/RestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/model/Exercise$ExerciseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/model/Exercise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/repository/ExerciseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/repository/ExerciseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/service/ExerciseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,7 @@
       <list>
         <option value="HTML File" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -78,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../The-chefs-cookbook" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../macedonian-army-jpa-hibernate" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -94,15 +99,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.TrackerApp">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,7 +213,9 @@
       <workItem from="1621016880406" duration="4000" />
       <workItem from="1622236780243" duration="417000" />
       <workItem from="1622304876401" duration="6922000" />
-      <workItem from="1622403772215" duration="1886000" />
+      <workItem from="1622403772215" duration="7135000" />
+      <workItem from="1622545806043" duration="651000" />
+      <workItem from="1622547173709" duration="5278000" />
     </task>
     <servers />
   </component>

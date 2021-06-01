@@ -1,37 +1,43 @@
 package bm.app.sports.controller;
 
-import bm.app.sports.model.Exercise;
+import bm.app.sports.dto.ExerciseDto;
+import bm.app.sports.entity.Exercise;
+import bm.app.sports.mappers.ExerciseMapper;
+import bm.app.sports.mappers.implementation.ExerciseMapperImpl;
 import bm.app.sports.repository.ExerciseRepository;
+import bm.app.sports.service.ExerciseCreateService;
+import bm.app.sports.service.ExerciseGetAll;
+import bm.app.sports.service.implementations.ExerciseGetAllImpl;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
 
 @Controller
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class ExerciseController {
 
     private static final Logger logger = LoggerFactory.getLogger(ExerciseController.class);
 
     private ExerciseRepository exerciseRepository;
-
-    public ExerciseController(ExerciseRepository exerciseRepository) {
-        this.exerciseRepository = exerciseRepository;
-    }
-
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-mm-dd");
     private String exerciseName = "";
     private int seriesAmount;
+    private ExerciseCreateService exerciseCreateService;
+    private ExerciseGetAll exerciseGetAll;
 
     @GetMapping("menu")
     public String getMenu() {
@@ -161,14 +167,14 @@ public class ExerciseController {
 
     @PostMapping("allrecords")
     public String displayAllRecords(Model model) {
-        List<Exercise> listOfRecords = exerciseRepository.findAll();
+        List<ExerciseDto> listOfRecords = exerciseGetAll.listOfExercises(exerciseRepository.findAll());
         model.addAttribute("listOfRecords", listOfRecords);
         return "allrecords";
     }
 
     @PostMapping("morePushUpsPlease")
     public String displayAllPushups(Model model) {
-        List<Exercise> listOfPushups = exerciseRepository.findAllPushups();
+        List<ExerciseDto> listOfPushups = exerciseGetAll.listOfExercises(exerciseRepository.findAllPushups());
         model.addAttribute("listOfPushups", listOfPushups);
         return "allpushups";
     }
@@ -189,20 +195,17 @@ public class ExerciseController {
             return "repetitions";
         }
 
-        LocalDate localDate = LocalDate.now();
-        Date date = Date.valueOf(localDate);
-        Exercise exercise = new Exercise();
-        exercise.setDay(date);
-        exercise.setExerciseType(this.exerciseName);
-        exercise.setSeries(this.seriesAmount);
-        exercise.setRepetitions(finalExtractedRepetitions);
-        exerciseRepository.save(exercise);
+        Date date = new Date();
+        ExerciseDto exerciseDto = new ExerciseDto();
+        exerciseDto.setDay(date);
+        exerciseDto.setExerciseType(this.exerciseName);
+        exerciseDto.setSeries(this.seriesAmount);
+        exerciseDto.setRepetitions(finalExtractedRepetitions);
+        exerciseCreateService.createExercise(exerciseDto);
         model.addAttribute("date", date);
         model.addAttribute("exercise", this.exerciseName);
         model.addAttribute("series", this.seriesAmount);
         model.addAttribute("repetitions", finalExtractedRepetitions);
         return "finalResult";
     }
-
-
 }
