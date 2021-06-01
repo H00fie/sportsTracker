@@ -11,6 +11,7 @@ public class ExerciseMapperImpl implements ExerciseMapper {
     @Override
     public Exercise exerciseDtoToExercise(ExerciseDto exerciseDto) {
         return Exercise.builder()
+                .id(exerciseDto.getId())
                 .day(exerciseDto.getDay())
                 .exerciseType(exerciseDto.getExerciseType())
                 .series(exerciseDto.getSeries())
@@ -21,6 +22,7 @@ public class ExerciseMapperImpl implements ExerciseMapper {
     @Override
     public ExerciseDto exerciseToExerciseDto(Exercise exercise) {
         return ExerciseDto.builder()
+                .id(exercise.getId())
                 .day(exercise.getDay())
                 .exerciseType(exercise.getExerciseType())
                 .series(exercise.getSeries())

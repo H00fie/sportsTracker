@@ -7,18 +7,12 @@
     <list default="true" id="bd9f04de-700e-4b3c-a24d-49f7149611ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/ExerciseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/ExerciseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/controller/RestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/entity/Exercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/repository/ExerciseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/repository/ExerciseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/ExerciseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/implementations/ExerciseCreateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/implementations/ExerciseCreateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/implementations/ExerciseGetAllImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/sports/service/implementations/ExerciseGetAllImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/ExerciseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/ExerciseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/controller/RestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/model/Exercise$ExerciseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/model/Exercise.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/repository/ExerciseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/repository/ExerciseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/service/ExerciseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/mappers/implementation/ExerciseMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/mappers/implementation/ExerciseMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/service/implementations/ExerciseCreateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/service/implementations/ExerciseCreateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/sports/service/implementations/ExerciseGetAllImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/sports/service/implementations/ExerciseGetAllImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +209,7 @@
       <workItem from="1622304876401" duration="6922000" />
       <workItem from="1622403772215" duration="7135000" />
       <workItem from="1622545806043" duration="651000" />
-      <workItem from="1622547173709" duration="5278000" />
+      <workItem from="1622547173709" duration="6552000" />
     </task>
     <servers />
   </component>

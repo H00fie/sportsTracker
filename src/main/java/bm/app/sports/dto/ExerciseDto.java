@@ -9,6 +9,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Builder
+@ToString
 public class ExerciseDto {
 
     private Long id;

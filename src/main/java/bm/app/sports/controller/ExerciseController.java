@@ -1,14 +1,9 @@
 package bm.app.sports.controller;
 
 import bm.app.sports.dto.ExerciseDto;
-import bm.app.sports.entity.Exercise;
-import bm.app.sports.mappers.ExerciseMapper;
-import bm.app.sports.mappers.implementation.ExerciseMapperImpl;
 import bm.app.sports.repository.ExerciseRepository;
 import bm.app.sports.service.ExerciseCreateService;
 import bm.app.sports.service.ExerciseGetAll;
-import bm.app.sports.service.implementations.ExerciseGetAllImpl;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
@@ -27,17 +21,16 @@ import java.util.stream.IntStream;
 
 @Controller
 @RequiredArgsConstructor
-@AllArgsConstructor
 public class ExerciseController {
 
     private static final Logger logger = LoggerFactory.getLogger(ExerciseController.class);
 
-    private ExerciseRepository exerciseRepository;
+    private final ExerciseRepository exerciseRepository;
     private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-mm-dd");
     private String exerciseName = "";
     private int seriesAmount;
-    private ExerciseCreateService exerciseCreateService;
-    private ExerciseGetAll exerciseGetAll;
+    private final ExerciseCreateService exerciseCreateService;
+    private final ExerciseGetAll exerciseGetAll;
 
     @GetMapping("menu")
     public String getMenu() {

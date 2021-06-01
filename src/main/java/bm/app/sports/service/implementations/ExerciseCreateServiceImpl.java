@@ -3,6 +3,7 @@ package bm.app.sports.service.implementations;
 import bm.app.sports.dto.ExerciseDto;
 import bm.app.sports.entity.Exercise;
 import bm.app.sports.mappers.ExerciseMapper;
+import bm.app.sports.mappers.implementation.ExerciseMapperImpl;
 import bm.app.sports.repository.ExerciseRepository;
 import bm.app.sports.service.ExerciseCreateService;
 import lombok.AllArgsConstructor;
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
-@RequiredArgsConstructor
 @AllArgsConstructor
 @Service
 public class ExerciseCreateServiceImpl implements ExerciseCreateService {

@@ -12,12 +12,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-@RequiredArgsConstructor
 @AllArgsConstructor
 @Service
 public class ExerciseGetAllImpl implements ExerciseGetAll {
 
-    private ExerciseMapperImpl exerciseMapper;
+    private ExerciseMapper exerciseMapper;
 
     @Override
     public List<ExerciseDto> listOfExercises(List<Exercise> list) {
